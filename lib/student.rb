@@ -4,7 +4,9 @@ class Student
 
   attr_accessor :id,:name,:grade
 
-  def initialize(id: nil,name:,grade:)
+  def initialize(name,grade,id=nil)
+    @name = name
+    @grade = grade
   end
 
   def self.create_table
